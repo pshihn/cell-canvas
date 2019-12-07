@@ -1,0 +1,27 @@
+{
+  "name": "cell-canvas",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pshihn/cell-canvas.git"
+  },
+  "author": "Preet Shihn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pshihn/cell-canvas/issues"
+  },
+  "homepage": "https://github.com/pshihn/cell-canvas#readme",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "pointer-tracker": "^2.0.3"
+  }
+}
