@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <cell-canvas></cell-canvas>
+  <script type="module" src="../bin/cell-canvas.js"></script>
+  <script type="module">
+    const c = document.querySelector('cell-canvas');
+    c.addHandle('a', 4, 4);
+    c.addHandle('b', 10, 4);
+
+    const handles = c.handles;
+    const map = new Map();
+    map.set('x1', handles[0].cx);
+    map.set('y1', handles[0].cy);
+    map.set('x2', handles[1].cx);
+    map.set('y2', handles[1].cy);
+    const line = c.draw('line', map);
+
+    c.addEventListener('handle-move', () => {
+      const handles = c.handles;
+      line.setAttribute('x1', handles[0].cx);
+      line.setAttribute('y1', handles[0].cy);
+      line.setAttribute('x2', handles[1].cx);
+      line.setAttribute('y2', handles[1].cy);
+    });
+
+  </script>
+</body>
+
+</html>

@@ -2,8 +2,11 @@
   "name": "cell-canvas",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/cell-canvas.js",
+  "module": "lib/cell-canvas.js",
+  "types": "lib/cell-canvas.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

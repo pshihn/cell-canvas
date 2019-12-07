@@ -9,7 +9,7 @@
       "dom"
     ],
     "declaration": true,
-    "outDir": "./bin",
+    "outDir": "./lib",
     "baseUrl": ".",
     "strict": true,
     "strictNullChecks": true,
